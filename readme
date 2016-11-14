@@ -1,0 +1,24 @@
+graph-ui
+
+short description:
+
+this tool can be used to draw a directed graph in the graph view on the left
+and to print corresponding source code in the source view on the right.
+the source code is given by very simple statements of the form 
+
+'graph.edge(2, 3).setDistance(5);'
+
+for each edge, which can be parsed to create the graph. use the arrow buttons
+to sync the two views. nodes and edges can also be added by clicking the graph
+(see instructions below the graph). so far the edge weights and node labels 
+can only be modified in the source view.
+
+installation:
+
+* run 'npm install' from a command line
+* see the scripts in package.json to build the app
+* for example run 'npm run bundle' for the production version and
+  open app/index.html from a browser (tested with Firefox 49)
+* to run the tests run 'npm run testBundle' and open spec/specRunner.html from 
+  a browser
+

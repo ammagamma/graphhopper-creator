@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>graph UI</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="../node_modules/codemirror/lib/codemirror.css">
+  </head>
+  <body>
+    <div id="main_pane">
+        <div id="graph_pane"></div>
+        <div id="source_pane"></div>
+    </div>
+    <div id="bottom_pane">
+        <center>
+            <button id="syncSourceToGraphButton">&lt;</button>
+            <button id="syncGraphToSourceButton">&gt;</button>
+        </center>
+        <h3>Instructions</h3>
+        <ul>
+            <li>drag nodes to reposition graph</li>
+            <li>click graph pane to add new nodes</li>
+            <li>click a node to select it</li>
+            <li>ctrl-click a second node to create a new edge</li>
+            <li>click arrow buttons to sync graph and source view. isolated nodes are ignored in source view</li>
+        </ul>
+        So far it is not possible to set edge weights, relabel nodes or to
+        remove edges or nodes!
+    </div>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
+ 

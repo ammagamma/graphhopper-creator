@@ -1,0 +1,33 @@
+
+#graph_pane {
+    position: relative;
+    float: left;
+}
+
+#source_pane {
+    position: relative;
+    float: left;
+}
+
+#bottom_pane {
+    clear: both;
+}
+.node circle {
+    fill: #3BBC00;
+}
+
+.node.selected circle {
+    fill: #000000;
+}
+
+.node text {
+    pointer-events: none;
+    fill: white;
+    font-family: Arial;
+} 
+
+.edge path {
+    fill: none;
+    stroke: black;
+    stroke-width: 3px;
+}
